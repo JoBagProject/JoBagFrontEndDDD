@@ -1,5 +1,6 @@
 import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {Router} from "@angular/router";
+import {AuthService} from "../../Shared/auth.service";
 
 @Component({
   selector: 'app-login',
@@ -12,11 +13,14 @@ export class LoginComponent implements OnInit {
   @ViewChild("email") email! : ElementRef;
   @ViewChild("password") password! : ElementRef;
 
-  constructor(private _router: Router) {
+  constructor(private role_service : AuthService,
+              private _router: Router) {
   }
 
   ngOnInit(): void {
-
+    this.role_service.getRoleUser(2).subscribe((data:any) => {
+        console.log(data);
+    });
   }
 
   logIn():void{
