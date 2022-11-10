@@ -19,8 +19,8 @@
 }
 
 .profile-form-input{
-  width: 40%;
-  margin: 1% auto;
+  width: 50%;
+  margin-top: 2%;
 }
 
 .mat-button{
@@ -32,4 +32,3 @@
   padding: 5px 30px 5px 30px;
   text-align: center;
 }
-

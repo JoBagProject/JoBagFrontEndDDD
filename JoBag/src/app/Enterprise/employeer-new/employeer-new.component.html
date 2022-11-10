@@ -6,20 +6,20 @@
 <div class="profile-container-contain">
   <div class="form-group">
 
-    <form (submit)="postulantData">
+    <form (submit)="employeerData">
       <mat-form-field appearance="outline" class="profile-form-input">
         <mat-hint>
           put their names
         </mat-hint>
-        <input matInput matAutosizeMinRows=4 required name="name" [(ngModel)]="postulantData.firstname" placeholder="Name">
+        <input matInput matAutosizeMinRows=4 required name="name" [(ngModel)]="employeerData.firstname" placeholder="Name">
       </mat-form-field>
     </form>
-    <form (submit)="postulantData" >
+    <form (submit)="employeerData" >
       <mat-form-field appearance="outline" class="profile-form-input">
         <mat-hint>
           Put your last names
         </mat-hint>
-        <input matInput matAutosizeMinRows=4 required name="name" [(ngModel)]="postulantData.lastname"  placeholder="Surnames">
+        <input matInput matAutosizeMinRows=4 required name="name" [(ngModel)]="employeerData.lastname"   placeholder="Surnames">
       </mat-form-field>
     </form>
     <form >
@@ -27,7 +27,7 @@
         <mat-hint>
           Place your Identity Document
         </mat-hint>
-        <input matInput matAutosizeMinRows=4  name="document" type="number"   required [(ngModel)]="postulantData.document"  placeholder="DNI">
+        <input matInput matAutosizeMinRows=4  name="document" type="number"   required [(ngModel)]="employeerData.document"  placeholder="DNI">
       </mat-form-field>
     </form>
     <form >
@@ -35,24 +35,24 @@
         <mat-hint>
           Put your phone number
         </mat-hint>
-        <input matInput matAutosizeMinRows=4 name="telefono" type="number" required [(ngModel)]="postulantData.number" placeholder="Phone number">
+        <input type="email" matInput matAutosizeMinRows=4 name="telefono"  type="number" required [(ngModel)]="employeerData.number" placeholder="Phone number">
       </mat-form-field>
     </form>
 
     <form >
       <mat-form-field appearance="outline" class="profile-form-input">
         <mat-hint>
-          Enter your marital status
+          Place your position in the company
         </mat-hint>
-        <input matInput matAutosizeMinRows=4 required name="estadocivil" [(ngModel)]="postulantData.civil_status" placeholder="Marital status">
+        <input matInput matAutosizeMinRows=4 required name="posicion" [(ngModel)]="employeerData.posicion" placeholder="Position">
       </mat-form-field>
     </form>
     <form >
       <mat-form-field appearance="outline" class="profile-form-input">
         <mat-hint>
-          Enter your email
+          Put your email
         </mat-hint>
-        <input matInput matAutosizeMinRows=4 name="email" type="email" required [(ngModel)]="postulantData.email"   placeholder="Email">
+        <input matInput matAutosizeMinRows=4 name="email" type="email" required [(ngModel)]="employeerData.email"   placeholder="Email">
       </mat-form-field>
     </form>
     <form >
@@ -60,11 +60,9 @@
         <mat-hint>
           Enter your password
         </mat-hint>
-        <input matInput matAutosizeMinRows=4 required name="password" type="password" [(ngModel)]="postulantData.password" placeholder="Password">
+        <input matInput matAutosizeMinRows=4 required name="password" type="password" [(ngModel)]="employeerData.password" placeholder="Password">
       </mat-form-field>
-      <input  (click)="AddPostulant()"  [routerLink]="['/login']" class="mat-focus-indicator mat-button mat-button-base" value="
-Save Changes">
+      <input  (click)="AddEmployeer()"  [routerLink]="['/login']" class="mat-focus-indicator mat-button mat-button-base" value="Save Changes">
     </form>
-
   </div>
 </div>

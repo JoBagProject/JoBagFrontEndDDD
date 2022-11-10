@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {NgForm} from "@angular/forms";
+import {Postulant} from "../../Shared/Interface/postulant";
+import {PostulantService} from "../../Shared/Services/postulant.service";
 
 @Component({
   selector: 'app-postulant-new',
@@ -7,9 +10,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PostulantNewComponent implements OnInit {
 
-  constructor() { }
+  postulantForm!: NgForm;
+  postulantData: Postulant = {} as Postulant;
+  constructor(private postulantApiService: PostulantService) { }
 
   ngOnInit(): void {
   }
 
+  AddPostulant(): void{
+    const newPostulant = {firstname: this.postulantData.firstname, lastname: this.postulantData.lastname, email: this.postulantData.email
+      ,number: this.postulantData.number,password: this.postulantData.password,document: this.postulantData.document,civil_status: this.postulantData.civil_status};
+    this.postulantApiService.addPostulants(newPostulant).subscribe((response: any) => {
+      console.log(response)
+    });
+  }
 }
