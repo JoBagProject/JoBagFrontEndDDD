@@ -9,7 +9,7 @@ export class AuthService {
 
   constructor(private http: HttpClient) {
   }
-  private role_user: string = "http://localhost:5193/api/Role/Get?roleId=";
+  private role_user: string = "https://jobag.azurewebsites.net/api/Role/Get?roleId=";
 
   httpOptions = { headers: new HttpHeaders({ 'Content-Type': 'application/json'})};
 // API Error Handling

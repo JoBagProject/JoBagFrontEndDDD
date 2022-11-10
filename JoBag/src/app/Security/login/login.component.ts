@@ -18,7 +18,7 @@ export class LoginComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.role_service.getRoleUser(2).subscribe((data:any) => {
+    this.role_service.getRoleUser(1).subscribe((data:any) => {
         console.log(data);
     });
   }

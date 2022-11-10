@@ -1,0 +1,29 @@
+<div class="head">
+  <h1 style="font-size: 25px">
+    <strong>
+      ¡ Choose your path!<br><br>
+      Be part of the great Jobag community, apply or search for your ideal applicant!
+    </strong>
+  </h1>
+</div>
+<div class="content">
+  <mat-card class="mat-elevation-z4" style="margin-top: 3%">
+    <img alt="image_postulant" class="img-logo" src="./assets/postulante.png">
+    <br>
+    <div class="but">
+      <button  type="button" class="btn btn-primary" [routerLink]="['/postulant/new']" >Postulant</button>
+    </div>
+    <br>
+  </mat-card>
+  <mat-divider vertical class ="divider"></mat-divider>
+  <br> <br>
+  <mat-card class="mat-elevation-z1">
+    <br>
+    <img alt="image_employer" class="img-logo" src="assets/empleador.png">
+    <br>
+    <div class="but">
+      <button  type="button" class="btn btn-primary" [routerLink]="['/employeer/new']">Employer</button>
+    </div>
+  </mat-card>
+</div>
+
