@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {DialogContratComponent} from "../dialog-changes-saved-successfully/dialog-contrat.component";
+import {DialogContratComponent} from "../../pages/dialog-changes-saved-successfully/dialog-contrat.component";
 import {MatDialog} from "@angular/material/dialog";
 
 @Component({

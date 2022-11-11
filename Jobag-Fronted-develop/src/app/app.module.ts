@@ -24,9 +24,9 @@ import {MatStepperModule} from "@angular/material/stepper";
 import { PostulationStepOneComponent } from './pages/postulation-step-one/postulation-step-one.component';
 import { PostulationStepTwoComponent } from './pages/postulation-step-two/postulation-step-two.component';
 import { PostulationStepTreeComponent } from './pages/postulation-step-tree/postulation-step-tree.component';
-import { MainNavPostulantComponent } from './pages/main-nav-postulant/main-nav-postulant.component';
+import { MainNavPostulantComponent } from './Public/main-nav-postulant/main-nav-postulant.component';
 import { FilestackModule } from '@filestack/angular';
-import { UploudfilesComponent } from './pages/uploudfiles/uploudfiles.component';
+import { UploudfilesComponent } from './Public/uploudfiles/uploudfiles.component';
 import {MatCheckboxModule} from "@angular/material/checkbox";
 import { FiltroPostulanteComponent } from './components/filtro-postulante/filtro-postulante.component';
 import { SearchJobsComponent } from './pages/search-jobs/search-jobs.component';
@@ -34,11 +34,11 @@ import { SideMenuComponent } from './components/side-menu-postulant/side-menu.co
 import { JobsListComponent } from './components/jobs-list/jobs-list.component';
 import { JobsApiService } from './Shared/Service/jobs-api.service';
 import { JobInformationComponent } from './pages/job-information/job-information.component';
-import { AccountsettingsComponent } from './pages/accountsettings/accountsettings.component';
+import { AccountsettingsComponent } from './Public/accountsettings/accountsettings.component';
 import { ProfileStudentComponent } from './pages/profile-student/profile-student.component';
 import {MatChipsModule} from "@angular/material/chips";
 import {MatExpansionModule} from '@angular/material/expansion';
-import { ContratComponent } from './pages/contrat/contrat.component';
+import { ContratComponent } from './Public/contrat/contrat.component';
 import { InterviewsComponent } from './pages/interviews/interviews.component';
 import { ApprovedPostulantComponent } from './pages/approved-postulant/approved-postulant.component';
 import {MyAccountPostulantComponent} from "./pages/my-account-postulant/my-account-postulant.component";
@@ -47,7 +47,7 @@ import { LoginRegisterComponent } from './pages/login-register/login-register.co
 import { ChoosePostulantOrEmployerComponent } from './pages/choose-postulant-or-employer/choose-postulant-or-employer.component';
 import { EmployeerNewComponent } from './pages/employeer-new/employeer-new.component';
 import { PostulantNewComponent } from './pages/postulant-new/postulant-new.component';
-import { MainNavEmployeerComponent } from './pages/main-nav-employeer/main-nav-employeer.component';
+import { MainNavEmployeerComponent } from './Public/main-nav-employeer/main-nav-employeer.component';
 import {EmployeerService} from "./Shared/Service/employeer.service";
 import {PostulantService} from "./Shared/Service/postulant.service";
 import {MatTabsModule} from "@angular/material/tabs";
@@ -70,12 +70,9 @@ import {MatMenuModule} from '@angular/material/menu';
 import { SelectpostulantsMoreinfoComponent } from './pages/selectpostulants-moreinfo/selectpostulants-moreinfo.component';
 import { ModifyProfessionalProfileComponent } from './pages/modify-professional-profile/modify-professional-profile.component';
 import { ModifyCompanyProfileComponent } from './pages/modify-company-profile/modify-company-profile.component';
-import { TermsAndConditionsComponent } from './pages/terms-and-conditions/terms-and-conditions.component';
+import { TermsAndConditionsComponent } from './Public/terms-and-conditions/terms-and-conditions.component';
 import { MypostulantionInformationComponent } from './pages/mypostulantion-information/mypostulantion-information.component';
 import {JobOfferNewComponentComponent} from "./pages/job-offer-new-component/job-offer-new-component.component";
-import { AuthInterceptor } from './helpers/auth.interceptor';
-
-
 
 @NgModule({
   declarations: [
@@ -159,7 +156,7 @@ import { AuthInterceptor } from './helpers/auth.interceptor';
   ],
 
 
-  providers: [PostulantsApiService,JobsApiService,EmployeerService,PostulantService, AuthInterceptor],
+  providers: [PostulantsApiService,JobsApiService,EmployeerService,PostulantService],
 
   bootstrap: [AppComponent]
 })

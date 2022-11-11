@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { JobInformationComponent } from './pages/job-information/job-information.component';
 import { PostulationsComponent } from './pages/postulations/postulations.component';
 import {SearchJobsComponent} from "./pages/search-jobs/search-jobs.component";
-import {ContratComponent} from "./pages/contrat/contrat.component";
+import {ContratComponent} from "./Public/contrat/contrat.component";
 import {InterviewsComponent} from "./pages/interviews/interviews.component";
 import {ApprovedPostulantComponent} from "./pages/approved-postulant/approved-postulant.component";
 import {MyAccountPostulantComponent} from "./pages/my-account-postulant/my-account-postulant.component";
@@ -25,7 +25,7 @@ import {SelectpostulantsMoreinfoComponent} from "./pages/selectpostulants-morein
 import {NewInterviewComponent} from "./pages/new-interview/new-interview.component";
 import {ModifyProfessionalProfileComponent} from "./pages/modify-professional-profile/modify-professional-profile.component";
 import {ModifyCompanyProfileComponent} from "./pages/modify-company-profile/modify-company-profile.component";
-import {TermsAndConditionsComponent} from "./pages/terms-and-conditions/terms-and-conditions.component";
+import {TermsAndConditionsComponent} from "./Public/terms-and-conditions/terms-and-conditions.component";
 import { MypostulantionInformationComponent } from './pages/mypostulantion-information/mypostulantion-information.component';
 import {DialogJobNewComponent} from "./pages/dialog-job-new/dialog-job-new.component";
 
