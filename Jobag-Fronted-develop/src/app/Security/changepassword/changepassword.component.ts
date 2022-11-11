@@ -56,7 +56,7 @@ export class ChangepasswordComponent implements OnInit {
           });
       }
         else{
-          this.router.navigate(['/changepassword'])
+          this.router.navigate(['/login'])
         }
       }
 

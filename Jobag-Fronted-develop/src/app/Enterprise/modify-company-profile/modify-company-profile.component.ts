@@ -4,7 +4,7 @@ import {ModifyCompanyProfileApiService} from "../../Shared/Service/modify-compan
 import {ActivatedRoute, Router} from "@angular/router";
 import {Company} from "../../Shared/Interface/company";
 import {MatDialog} from "@angular/material/dialog";
-import {DialogContratComponent} from "../dialog-changes-saved-successfully/dialog-contrat.component";
+import {DialogContratComponent} from "../../Public/dialog-changes-saved-successfully/dialog-contrat.component";
 
 @Component({
   selector: 'app-modify-company-profile',
