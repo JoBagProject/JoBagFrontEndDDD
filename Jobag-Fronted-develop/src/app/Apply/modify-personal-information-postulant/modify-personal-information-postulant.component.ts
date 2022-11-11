@@ -3,7 +3,7 @@ import {ModifyPersonalInformationPostulantApiService} from "../../Shared/Service
 import {ActivatedRoute, Router} from "@angular/router";
 import {Postulant} from "../../Shared/Interface/postulant";
 import {User} from "../../Shared/Interface/user";
-import {DialogContratComponent} from "../dialog-changes-saved-successfully/dialog-contrat.component";
+import {DialogContratComponent} from "../../Public/dialog-changes-saved-successfully/dialog-contrat.component";
 import {MatDialog} from "@angular/material/dialog";
 
 @Component({
