@@ -74,19 +74,8 @@ export class LoginRegisterComponent implements OnInit {
         console.clear();
         this.employeerApi.getEmployeerbyId(this.ingresante).subscribe((responseEmployeer: any ) => {
           console.clear();
-          this.employeer=responseEmployeer
+          this.employeer=responseEmployeer;
 
-          this.authService.login(responseEmployeer).subscribe(
-            data => {
-              console.log('confirm',data);
-
-            },
-            error => {
-              console.clear();
-              console.log('error',error.error.errorMessage);
-
-            }
-          );
           console.clear();
         this.router.navigate([`employeer/${this.ingresante}`])
             .then(() => console.clear());
@@ -95,19 +84,8 @@ export class LoginRegisterComponent implements OnInit {
 
         this.postulantApi.getPostulantbyId(this.ingresante).subscribe((responsePostulant: any) => {
             console.clear();
-               this.postulant=responsePostulant
+               this.postulant=responsePostulant;
 
-          this.authService.login(responsePostulant).subscribe(
-            data => {
-
-              console.log('confirm',data);
-
-            },
-            error => {
-              console.log('error',error.error.errorMessage);
-              console.clear();
-            }
-          );
           this.router.navigate([`postulant/${this.ingresante}`])
             .then(() => console.clear());
         })
