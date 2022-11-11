@@ -4,7 +4,7 @@ import {Job} from "../../Shared/Interface/job";
 import {JobNewApiService} from "../../Shared/Service/job-new-api.service";
 import {ActivatedRoute} from "@angular/router";
 import {MatDialog} from "@angular/material/dialog";
-import {DialogJobNewComponent} from "../dialog-job-new/dialog-job-new.component";
+import {DialogJobNewComponent} from "../../Public/dialog-job-new/dialog-job-new.component";
 
 @Component({
   selector: 'app-job-offer-new-component',

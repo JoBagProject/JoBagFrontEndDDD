@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
 import {MatDialog} from "@angular/material/dialog";
-import {DialogJobNewComponent} from "../dialog-job-new/dialog-job-new.component";
+import {DialogJobNewComponent} from "../../Public/dialog-job-new/dialog-job-new.component";
 import {Interview} from "../../Shared/Interface/interview";
 import {Postulantjobs} from "../../Shared/Interface/postulantjobs";
 import {NewInterviewApiService} from "../../Shared/Service/new-interview-api.service";

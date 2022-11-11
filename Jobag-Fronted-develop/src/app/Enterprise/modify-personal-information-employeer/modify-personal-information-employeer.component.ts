@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ModifyPersonalInformationEmployeerApiService} from "../../Shared/Service/modify-personal-information-employeer-api.service";
 import {ActivatedRoute, Router} from "@angular/router";
 import {User} from "../../Shared/Interface/user";
-import {DialogContratComponent} from "../dialog-changes-saved-successfully/dialog-contrat.component";
+import {DialogContratComponent} from "../../Public/dialog-changes-saved-successfully/dialog-contrat.component";
 import {MatDialog} from "@angular/material/dialog";
 
 @Component({
