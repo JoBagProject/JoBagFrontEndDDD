@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/jobag-fronted",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
