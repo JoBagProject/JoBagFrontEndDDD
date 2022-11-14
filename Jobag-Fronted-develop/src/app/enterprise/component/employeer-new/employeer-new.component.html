@@ -1,0 +1,56 @@
+<div class="profile-container-header">
+  <h1>REGISTER PERSONAL INFORMATION</h1>
+</div>
+<div class="profile-container-contain">
+  <div class="form-group">
+
+    <form (submit)="employeerData">
+      <mat-form-field appearance="outline" class="profile-form-input">
+        <mat-hint>put their names</mat-hint>
+        <input matInput matAutosizeMinRows=4 required name="name" [(ngModel)]="employeerData.firstname" placeholder="Names">
+      </mat-form-field>
+    </form>
+    <form (submit)="employeerData" >
+      <mat-form-field appearance="outline" class="profile-form-input">
+        <mat-hint>Put your last names</mat-hint>
+        <input matInput matAutosizeMinRows=4 required name="name" [(ngModel)]="employeerData.lastname"   placeholder="Surnames">
+      </mat-form-field>
+    </form>
+    <form >
+      <mat-form-field appearance="outline" class="profile-form-input">
+        <mat-hint>Place your Identity Document</mat-hint>
+        <input matInput matAutosizeMinRows=4  name="document" type="number"   required [(ngModel)]="employeerData.document"  placeholder="DNI">
+      </mat-form-field>
+    </form>
+    <form >
+      <mat-form-field appearance="outline" class="profile-form-input">
+        <mat-hint>Put your phone number</mat-hint>
+        <input type="email" matInput matAutosizeMinRows=4 name="telefono"  type="number" required [(ngModel)]="employeerData.number" placeholder="Phone number">
+      </mat-form-field>
+    </form>
+
+    <form >
+      <mat-form-field appearance="outline" class="profile-form-input">
+        <mat-hint>Place your position in the company</mat-hint>
+        <input matInput matAutosizeMinRows=4 required name="posicion" [(ngModel)]="employeerData.posicion" placeholder="Position">
+      </mat-form-field>
+    </form>
+    <form >
+      <mat-form-field appearance="outline" class="profile-form-input">
+        <mat-hint>Put your email</mat-hint>
+        <input matInput matAutosizeMinRows=4 name="email" type="email" required [(ngModel)]="employeerData.email"   placeholder="Email">
+      </mat-form-field>
+    </form>
+    <form >
+      <mat-form-field appearance="outline" class="profile-form-input">
+        <mat-hint>Coloque su contraseña</mat-hint>
+        <input matInput matAutosizeMinRows=4 required name="password" type="password" [(ngModel)]="employeerData.password" placeholder="Password">
+      </mat-form-field>
+      <input  (click)="AddEmployeer()" class="mat-focus-indicator mat-button mat-button-base" value="Save Changes">
+    </form>
+
+
+
+
+  </div>
+</div>
