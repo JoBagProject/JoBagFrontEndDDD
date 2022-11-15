@@ -1,6 +1,6 @@
 <app-main-nav-employeer>
   <div class="profile-container-header">
-    <h1> REGISTRAR UNA ENTREVISTA </h1>
+    <h1> RECORD AN INTERVIEW </h1>
   </div>
 
   <div class="profile-container-content">
@@ -10,7 +10,7 @@
       <form (submit)="interviewData">
         <mat-form-field appearance="outline" class="profile-form-input">
           <mat-hint>
-            Ingrese la fecha de inicio
+            Enter start date
           </mat-hint>
           <input matInput matAutosizeMinRows=4 matInput required="date_interview" name="date_interview" type="date" [(ngModel)]="interviewData.date_Interview" placeholder="Date">
         </mat-form-field>
@@ -19,7 +19,7 @@
       <form (submit)="interviewData">
         <mat-form-field appearance="outline" class="profile-form-input">
           <mat-hint>
-            Ingrese la fecha final de la entrevista
+            Enter the end date of the interview
           </mat-hint>
           <input matInput matAutosizeMinRows=4 matInput required="final_date_interview" name="final_date_interview" type="date" [(ngModel)]="interviewData.final_date_Interview" placeholder="Date">
         </mat-form-field>
@@ -28,7 +28,7 @@
       <form (submit)="interviewData">
         <mat-form-field appearance="outline" class="profile-form-input">
           <mat-hint>
-            Ingrese la url de la sala
+            Enter the url of the room
           </mat-hint>
           <input matInput matAutosizeMinRows=4 matInput required="url" name="url" type="url" [(ngModel)]="interviewData.link_Interview" placeholder="Url">
         </mat-form-field>
@@ -47,7 +47,7 @@
             </div>
 
           </li>
-          <button class="btn-option"  mat-stroked-button color="primary" (click)="acceptInterview()"  >Confirmar postulantes</button>
+          <button class="btn-option"  mat-stroked-button color="primary" (click)="acceptInterview()"  >Confirm Applicants</button>
         </ul>
       </div>
 

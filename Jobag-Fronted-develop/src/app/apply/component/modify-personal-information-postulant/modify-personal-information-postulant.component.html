@@ -1,6 +1,6 @@
 <app-main-nav-postulant>
   <div class="profile-container-header">
-    <h1>INFORMACIÓN PERSONAL</h1>
+    <h1>PERSONAL INFORMATION</h1>
   </div>
   <div class="profile-container-header">
 
@@ -8,28 +8,28 @@
 
       <form>
         <mat-form-field appearance="outline" class="profile-form-input">
-          <mat-hint> Nombres </mat-hint>
+          <mat-hint> Names </mat-hint>
           <input matInput matAutosizeMinRows=4 required name="name" [(ngModel)]="newname" placeholder="{{userData.firstname}}">
         </mat-form-field>
       </form>
 
       <form>
         <mat-form-field appearance="outline" class="profile-form-input">
-          <mat-hint> Apellidos </mat-hint>
+          <mat-hint> Surnames </mat-hint>
           <input matInput matAutosizeMinRows=4 required name="name" [(ngModel)]="newlastname" placeholder="{{userData.lastname}}">
         </mat-form-field>
       </form>
 
       <form>
         <mat-form-field appearance="outline" class="profile-form-input">
-          <mat-hint> Documento de identidad </mat-hint>
+          <mat-hint> DNI </mat-hint>
           <input matInput matAutosizeMinRows=4 required name="name" [(ngModel)]="newdocument" placeholder="{{userData.document}}">
         </mat-form-field>
       </form>
 
       <form>
         <mat-form-field appearance="outline" class="profile-form-input">
-          <mat-hint> Número de telefono </mat-hint>
+          <mat-hint> Phone number </mat-hint>
           <input matInput matAutosizeMinRows=4 required name="name" [(ngModel)]="newnumber" placeholder="{{userData.number}}">
         </mat-form-field>
       </form>
@@ -44,10 +44,10 @@
 
 
       <br>
-      <button class="btn-option" (click)="getAllUsers()" [routerLink]="['Home/',postulantId]" mat-stroked-button color="primary"  >Cambiar Contraseña</button>
+      <button class="btn-option" (click)="getAllUsers()" [routerLink]="['Home/',postulantId]" mat-stroked-button color="primary"  >Change Password</button>
     </div>
     <br><br>
-    <button class="btn-option" (click)="getAllUsers()" [routerLink]="['Home/',postulantId]" mat-raised-button color="primary"  >Guardar cambios</button>
+    <button class="btn-option" (click)="getAllUsers()" [routerLink]="['Home/',postulantId]" mat-raised-button color="primary"  >Save Changes</button>
 
   </div>
 

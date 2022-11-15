@@ -3,7 +3,7 @@ import {FormGroup, NgForm} from "@angular/forms";
 import {Postulant} from "../../../shared/Interface/postulant";
 import {PostulantService} from "../../../shared/Service/postulant.service";
 import {PostulantjobsService} from "../../../shared/Service/postulantjobs.service";
-import {ActivatedRoute} from "@angular/router";
+import {ActivatedRoute, Router} from "@angular/router";
 
 @Component({
   selector: 'app-postulation-step-tree',
@@ -15,7 +15,9 @@ export class PostulationStepTreeComponent implements OnInit {
   postulantId!: number
   jobooferId!: number
   postulantData: Postulant = {} as Postulant;
-  constructor(private postulantjobsApiService: PostulantjobsService,private route:ActivatedRoute) {
+  constructor(private postulantjobsApiService: PostulantjobsService,
+              private router: Router,
+              private route:ActivatedRoute) {
 
     this.route.params.subscribe(params=>this.postulantId=params.postulantId)
     this.route.params.subscribe(params=>this.jobooferId=params.jobofferId)
@@ -39,7 +41,8 @@ export class PostulationStepTreeComponent implements OnInit {
   AddPostulantjobs(): void{
     const newPostulantJobs = {accept: false};
     this.postulantjobsApiService.addPostulantJobs(this.postulantId,this.jobooferId,newPostulantJobs).subscribe((response: any) => {
-      console.log(response)
+      console.log(response);
+      this.router.navigate(['/postulant/',this.postulantId]);
     });
   }
 

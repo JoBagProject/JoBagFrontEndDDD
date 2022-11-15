@@ -9,17 +9,17 @@
             </ng-template>
             <ng-template #editInfoTop>
                 <mat-form-field>
-                    <mat-label>Dirección:</mat-label>
+                    <mat-label>Address:</mat-label>
                     <input matInput [(ngModel)]="direction">
                 </mat-form-field>
                 <br>
                 <mat-form-field>
-                    <mat-label>Título:</mat-label>
+                    <mat-label>Title:</mat-label>
                     <input matInput [(ngModel)]="title">
                 </mat-form-field>
                 <br>
                 <mat-form-field>
-                    <mat-label>Tipo:</mat-label>
+                    <mat-label>Type:</mat-label>
                     <input matInput [(ngModel)]="type">
                 </mat-form-field>
             </ng-template>
@@ -28,27 +28,27 @@
             <div class="job-item-text-right-img">
             </div>
             <br>
-            <span>Publicado el: {{jobInfo.final_date_offer}}</span>
+            <span>Posted on: {{jobInfo.final_date_offer}}</span>
           </div>
         </div>
         <div class="job-info">
-          <h2>Detalles del aviso</h2>
+          <h2>notice details</h2>
           <ng-template [ngIf]="modify" [ngIfElse]="editInfoDetails">
               <p>{{jobInfo.description}}</p>
           </ng-template>
           <ng-template #editInfoDetails class="detail-info">
             <mat-form-field>
-                <mat-label>Detalles:</mat-label>
+                <mat-label>Details:</mat-label>
                 <textarea matInput [(ngModel)]="description"></textarea>
             </mat-form-field>
           </ng-template>
           <br>
           <div class="job-info-button">
               <ng-template [ngIf]="modify" [ngIfElse]="buttonSave">
-                  <button mat-button (click)="goBack()">Cerrar Postulacion</button>
+                  <button mat-button (click)="goBack()">Close Application</button>
               </ng-template>
               <ng-template #buttonSave>
-                <button mat-button (click)="editJob()">Actualizar Anuncio</button>
+                <button mat-button (click)="editJob()">Update Ad</button>
               </ng-template>
           </div>
           <div class="example-button-container">
@@ -57,7 +57,9 @@
                 <div class="mat-menu-item">
                     <div class="mat-menu-item-content">
 
-                        <p   [routerLink]="['/','employeer',employeerId,'joboffer',jobId,'postulantjobs'] ">Ver Postulantes</p>
+                        <p   [routerLink]="['/','employeer',employeerId,'joboffer',jobId,'postulantjobs'] ">
+                          See Applicants
+                        </p>
                     </div>
                     <div class="mat-menu-item-content">
                         <mat-icon>camera_alt</mat-icon>
@@ -66,7 +68,9 @@
 
                 <div class="mat-menu-item">
                     <div class="mat-menu-item-content" [routerLink]="['/','employeer',employeerId,'joboffer',jobId,'postulantjob','new-interview']">
-                        <p>Crear Entrevista</p>
+                        <p>
+                          Create Interview
+                        </p>
                     </div>
                     <div class="mat-menu-item-content">
                         <mat-icon>search</mat-icon>
@@ -74,7 +78,9 @@
                 </div>
                 <div class="mat-menu-item" (click)="handleModify()">
                     <div class="mat-menu-item-content">
-                        <p>Modificar Datos</p>
+                        <p>
+                          Modify data
+                        </p>
                     </div>
                     <div class="mat-menu-item-content">
                         <mat-icon>edit</mat-icon>

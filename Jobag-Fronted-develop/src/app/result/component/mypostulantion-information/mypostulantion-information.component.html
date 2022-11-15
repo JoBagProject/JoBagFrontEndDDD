@@ -10,16 +10,16 @@
         <div class="job-item-text-right-img">
         </div>
         <br>
-        <span>Publicado el: {{jobInfo.final_date_offerJobOffer}}</span>
+        <span>Posted on:{{jobInfo.final_date_offerJobOffer}}</span>
       </div>
     </div>
     <div class="job-info">
-      <h2>Detalles del aviso</h2>
+      <h2>notice details</h2>
       <p>{{jobInfo.descriptionJobOffer}}</p>
       <br>
-      
+
       <div class="job-info-button">
-        <button mat-button [routerLink]="['/','postulant',postulantId,'postulations']" (click)="deletePostulantJob()">ELIMINAR POSTULACION</button>
+        <button mat-button [routerLink]="['/','postulant',postulantId,'postulations']" (click)="deletePostulantJob()">DELETE APPLICATION</button>
       </div>
     </div>
   </div>

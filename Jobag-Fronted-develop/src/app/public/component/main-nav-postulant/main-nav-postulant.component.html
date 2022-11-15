@@ -18,11 +18,11 @@
       <br><br><br>
 
 
-      <a mat-list-item  [routerLink]="['/postulant/',postulantId]" (click)="drawer.toggle()">Búsqueda de empleos   <span class="default-spacer"></span><mat-icon>home  </mat-icon></a>
-      <a mat-list-item [routerLink]="['/postulant/', postulantId, 'postulations']" (click)="drawer.toggle()">Mis postulaciones   <span class="default-spacer"></span><mat-icon>work_outline</mat-icon></a>
-      <a mat-list-item [routerLink]="['/postulant/', postulantId, 'interview']" (click)="drawer.toggle()"> Mis entrevistas <span class="default-spacer"></span> <mat-icon>work_outline</mat-icon></a>
-      <a mat-list-item [routerLink]="['/postulant/', postulantId, 'myaccount']" (click)="drawer.toggle()">Mi cuenta  <span class="default-spacer"></span><mat-icon>account_circle</mat-icon> </a>
-      <a mat-list-item [routerLink]="['/']" (click)="drawer.toggle()">Cerrar sesión <span class="default-spacer"></span><mat-icon>account_circle</mat-icon> </a>
+      <a mat-list-item  [routerLink]="['/postulant/',postulantId]" (click)="drawer.toggle()">Job search   <span class="default-spacer"></span><mat-icon>home  </mat-icon></a>
+      <a mat-list-item [routerLink]="['/postulant/', postulantId, 'postulations']" (click)="drawer.toggle()">My applications  <span class="default-spacer"></span><mat-icon>work_outline</mat-icon></a>
+      <a mat-list-item [routerLink]="['/postulant/', postulantId, 'interview']" (click)="drawer.toggle()"> My interviews <span class="default-spacer"></span> <mat-icon>work_outline</mat-icon></a>
+      <a mat-list-item [routerLink]="['/postulant/', postulantId, 'myaccount']" (click)="drawer.toggle()">My account <span class="default-spacer"></span><mat-icon>account_circle</mat-icon> </a>
+      <a mat-list-item [routerLink]="['/']" (click)="drawer.toggle()">Sign off <span class="default-spacer"></span><mat-icon>account_circle</mat-icon> </a>
 
     </mat-nav-list>
 
@@ -41,9 +41,9 @@
       </button>
       <span class="default-spacer"></span>
       <div class="user-icon">User</div>
-      <span class="user-name">Bienvenido(a) {{postulantData.firstname}}!</span>
+      <span class="user-name">Welcome {{postulantData.firstname}}!</span>
       <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon" class="user-logout" [routerLink]="['/','login']">
-        Log Out
+        Sign off
       </button>
 
 

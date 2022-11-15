@@ -8,22 +8,22 @@
   <ng-template [ngIf]="smallScreen" [ngIfElse]="bigScreen">
     <mat-vertical-stepper class="mat-elevation-z4" #stepper linear>
       <mat-step align="center" >
-        <ng-template matStepLabel>Envío de CV</ng-template>
+        <ng-template matStepLabel>Sending of CV</ng-template>
         <app-postulation-step-one></app-postulation-step-one>
       </mat-step>
       <mat-step >
         <app-postulation-step-two></app-postulation-step-two>
-        <ng-template matStepLabel>Presentación</ng-template>
+        <ng-template matStepLabel>Presentation</ng-template>
 
       </mat-step>
       <mat-step>
-        <ng-template matStepLabel>Confirmación</ng-template>
+        <ng-template matStepLabel>Confirmation</ng-template>
         <app-postulation-step-tree></app-postulation-step-tree>
 
       </mat-step>
 
       <mat-step-header>
-        <ng-template matStepLabel>Confirmación</ng-template>
+        <ng-template matStepLabel>Confirmation</ng-template>
         <app-postulation-step-tree></app-postulation-step-tree>
 
       </mat-step-header>
@@ -32,22 +32,22 @@
   <ng-template #bigScreen>
     <mat-horizontal-stepper class="mat-elevation-z4" #stepper linear>
       <mat-step align="center" >
-        <ng-template matStepLabel>Envío de CV</ng-template>
+        <ng-template matStepLabel>Sending of CV</ng-template>
         <app-postulation-step-one></app-postulation-step-one>
       </mat-step>
       <mat-step >
         <app-postulation-step-two></app-postulation-step-two>
-        <ng-template matStepLabel>Presentación</ng-template>
+        <ng-template matStepLabel>Presentation</ng-template>
 
       </mat-step>
       <mat-step>
-        <ng-template matStepLabel>Confirmación</ng-template>
+        <ng-template matStepLabel>Confirmation</ng-template>
         <app-postulation-step-tree></app-postulation-step-tree>
 
       </mat-step>
 
       <mat-step-header>
-        <ng-template matStepLabel>Confirmación</ng-template>
+        <ng-template matStepLabel>Confirmation</ng-template>
         <app-postulation-step-tree></app-postulation-step-tree>
 
       </mat-step-header>

@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
 import {MatDialog} from "@angular/material/dialog";
-import {DialogJobNewComponent} from "../../public/component/dialog-job-new/dialog-job-new.component";
-import {Interview} from "../../shared/Interface/interview";
-import {Postulantjobs} from "../../shared/Interface/postulantjobs";
-import {NewInterviewApiService} from "../../shared/Service/new-interview-api.service";
-import {Interviewp} from "../../shared/Interface/interviewp";
-import {InterviewApiService} from "../../shared/Service/interview-api.service";
+import {DialogJobNewComponent} from "../../../public/component/dialog-job-new/dialog-job-new.component";
+import {Interview} from "../../../shared/Interface/interview";
+import {Postulantjobs} from "../../../shared/Interface/postulantjobs";
+import {NewInterviewApiService} from "../../../shared/Service/new-interview-api.service";
+import {Interviewp} from "../../../shared/Interface/interviewp";
+import {InterviewApiService} from "../../../shared/Service/interview-api.service";
 
 @Component({
   selector: 'app-new-interview',
@@ -73,22 +73,17 @@ export class NewInterviewComponent implements OnInit {
 
 
   acceptInterview() {
-
     const newInterview = {date_Interview: this.interviewData.date_Interview,
       final_date_Interview: this.interviewData.final_date_Interview,
       link_Interview: this.interviewData.link_Interview}
 
       for (var i = 0; i < this.postulantjobs.length; i++) {
-      if (this.postulantjobs[i].prueba === true) {
+      if (this.postulantjobs[i].prueba) {
         this.interviewservice.addInterview(this.postulantjobs[i].idPostulant,
           this.postulantjobs[i].idJobOffer,
           newInterview).subscribe((response: any) => {
-
         });
-
-
       }
     }
-
-}
+  }
 }

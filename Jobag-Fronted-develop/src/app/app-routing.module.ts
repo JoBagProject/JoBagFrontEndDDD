@@ -3,8 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { JobInformationComponent } from './enterprise/component/job-information/job-information.component';
 import { PostulationsComponent } from './result/component/postulations/postulations.component';
 import {SearchJobsComponent} from "./apply/view/search-jobs/search-jobs.component";
-import {ContratComponent} from "./ability/contrat/contrat.component";
-import {InterviewsComponent} from "./ability/interviews/interviews.component";
+import {ContratComponent} from "./ability/view/contrat/contrat.component";
+import {InterviewsComponent} from "./ability/component/interviews/interviews.component";
 import {ApprovedPostulantComponent} from "./result/component/approved-postulant/approved-postulant.component";
 import {MyAccountPostulantComponent} from "./apply/view/my-account-postulant/my-account-postulant.component";
 import {ModifyPersonalInformationPostulantComponent} from "./apply/component/modify-personal-information-postulant/modify-personal-information-postulant.component";
@@ -14,7 +14,7 @@ import {EmployeerNewComponent} from "./enterprise/component/employeer-new/employ
 import {PostulantNewComponent} from "./apply/component/postulant-new/postulant-new.component";
 import {ChangepasswordComponent} from "./security/component/changepassword/changepassword.component";
 import {JobOfferNewComponentComponent} from "./enterprise/component/job-offer-new-component/job-offer-new-component.component";
-import {InterviewPostulantAllComponent} from "./ability/interview-postulant-all/interview-postulant-all.component";
+import {InterviewPostulantAllComponent} from "./ability/component/interview-postulant-all/interview-postulant-all.component";
 import {MyadsComponent} from "./public/view/myads/myads.component";
 import {MypostulationsComponent} from "./result/component/mypostulations/mypostulations.component";
 import {ModifyPersonalInformationEmployeerComponent} from "./enterprise/component/modify-personal-information-employeer/modify-personal-information-employeer.component";
@@ -22,7 +22,7 @@ import {MyAccountEmployeerComponent} from "./enterprise/view/my-account-employee
 import { SelectpostulantsComponent } from './result/view/selectpostulants/selectpostulants.component';
 import { MyadInformationComponent } from './public/component/myad-information/myad-information.component';
 import {SelectpostulantsMoreinfoComponent} from "./result/view/selectpostulants-moreinfo/selectpostulants-moreinfo.component";
-import {NewInterviewComponent} from "./ability/new-interview/new-interview.component";
+import {NewInterviewComponent} from "./ability/component/new-interview/new-interview.component";
 import {ModifyProfessionalProfileComponent} from "./enterprise/component/modify-professional-profile/modify-professional-profile.component";
 import {ModifyCompanyProfileComponent} from "./enterprise/component/modify-company-profile/modify-company-profile.component";
 import {TermsAndConditionsComponent} from "./public/view/terms-and-conditions/terms-and-conditions.component";

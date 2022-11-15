@@ -1,37 +1,37 @@
 
 <mat-card-content class="">
-  <mat-card-title> PERFIL PROFESIONAL </mat-card-title>
+  <mat-card-title> PROFESSIONAL PROFILE </mat-card-title>
 
 
   <p>
     <mat-form-field appearance="outline">
       <mat-label></mat-label>
-      <input matInput placeholder="Descripción personal">
+      <input matInput placeholder="Personal description">
 
-      <mat-hint>Descripción personal</mat-hint>
+      <mat-hint>Personal description</mat-hint>
     </mat-form-field>
   </p>
 
   <p>
     <mat-form-field appearance="outline">
       <mat-label></mat-label>
-      <input matInput placeholder="Experiencia laboral">
+      <input matInput placeholder="Work experience">
 
-      <mat-hint>Experiencia laboral</mat-hint>
+      <mat-hint>Work experience</mat-hint>
     </mat-form-field>
   </p>
   <p>
     <mat-form-field appearance="outline">
       <mat-label></mat-label>
-      <input matInput placeholder="Estudios">
+      <input matInput placeholder="Studies">
 
-      <mat-hint>Estudios</mat-hint>
+      <mat-hint>Studies</mat-hint>
     </mat-form-field>
 
   </p>
 
   <mat-form-field class="example-chip-list">
-    <mat-label>Favorite Lenguages</mat-label>
+    <mat-label>Favorite Languages</mat-label>
     <mat-chip-list #chipList aria-label="Fruit selection">
       <mat-chip *ngFor="let lenguaje of lenguages " [selectable]="selectable"
                 [removable]="removable" (removed)="remove(lenguaje)">

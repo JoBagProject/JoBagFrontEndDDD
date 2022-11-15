@@ -4,42 +4,43 @@
 
     <div class="job-item">
 
-      <h1> Entrevistas </h1>
+      <h1>
+        Interviews </h1>
 
       <br><br>
 
-      <h3>  Fecha actual: {{fecha.toLocaleDateString()}} </h3>
+      <h3>  Current date: {{fecha.toLocaleDateString()}} </h3>
 
         <ul>
 
           <li class="job-item-item" *ngFor="let interview of interviewData"   >
             <div class="job-containerss">
               <div>
-  
+
                 <h4>
-  
+
                   {{interview.titleJobOffer}}
-  
+
                 </h4>
-  
-                
+
+
               </div>
               <div>
                 <h5>
-    
-                  Fecha de Inicio de la entrevista: <br> {{interview.date_Interview}}
-    
+
+                  Start date of the interview: <br> {{interview.date_Interview}}
+
                 </h5>
-    
+
                 <h5>
-    
-                  Fecha final de la entrevista: <br> {{interview.final_date_Interview}}
-    
+
+                  End date of the interview: <br> {{interview.final_date_Interview}}
+
                 </h5>
-    
+
                 <button class="interview_button">
                   <a href="{{interview.link_Interview}}" target="_blank">
-                    Link de la entrevista
+                    Interview link
                   </a>
                 </button>
               </div>
@@ -55,11 +56,11 @@
     <div class="wrapper-calendar">
       <div class="header-calendar">
         <div>
-          <button (click)="changeMonth(-1)" class="btn-prev">Antes</button>
+          <button (click)="changeMonth(-1)" class="btn-prev">Before</button>
         </div>
         <h1>{{dateSelect | date:'MMMM, yyyy'}}</h1>
         <div>
-          <button (click)="changeMonth(1)" class="btn-next">Siguiente</button>
+          <button (click)="changeMonth(1)" class="btn-next">Next</button>
         </div>
       </div>
       <ol>

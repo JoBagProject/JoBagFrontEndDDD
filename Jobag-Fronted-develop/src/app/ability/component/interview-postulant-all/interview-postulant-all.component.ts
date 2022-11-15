@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
-import {InterviewApiService} from "../../shared/Service/interview-api.service";
+import {InterviewApiService} from "../../../shared/Service/interview-api.service";
 import {ActivatedRoute, Router} from "@angular/router";
-import {Interview} from "../../shared/Interface/interview";
+import {Interview} from "../../../shared/Interface/interview";
 import * as moment from 'moment'
 
 @Component({

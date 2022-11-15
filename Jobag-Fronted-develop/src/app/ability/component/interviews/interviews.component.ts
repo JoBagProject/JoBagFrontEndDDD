@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute, Router} from "@angular/router";
-import {Interview} from "../../shared/Interface/interview";
-import {InterviewApiService} from "../../shared/Service/interview-api.service";
+import {Interview} from "../../../shared/Interface/interview";
+import {InterviewApiService} from "../../../shared/Service/interview-api.service";
 
 @Component({
   selector: 'app-interviews',

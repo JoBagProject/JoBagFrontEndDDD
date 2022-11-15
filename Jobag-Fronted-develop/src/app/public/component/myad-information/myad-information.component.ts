@@ -42,7 +42,6 @@ export class MyadInformationComponent implements OnInit {
     this.jobs_service.getJobByEmployeerId(this.jobId,this.employeerId).subscribe((response : any)=>{
       this.jobInfo=response;
       this.final_date_offer=this.jobInfo.final_date_offer;
-      console.log(this.jobInfo);
 
     })
   }
@@ -63,10 +62,15 @@ export class MyadInformationComponent implements OnInit {
       type:this.type,
       title:this.title
     }
-    this.jobs_service.updateJobByEmployeerId(this.jobId,this.employeerId,this.jobUpdated).subscribe((response: any) => {
-      console.log(response)
-     });
-     this.location.back()
 
+    if(this.title == '' || this.direction == '' || this.type == '' || this.description == ''){
+      alert("Complete todos los campos")
+    }
+    else {
+      this.jobs_service.updateJobByEmployeerId(this.jobId,this.employeerId,this.jobUpdated).subscribe((response: any) => {
+        //console.log(response);
+      });
+      this.location.back();
+    }
   }
 }

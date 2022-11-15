@@ -29,38 +29,40 @@ export class ModifyPersonalInformationEmployeerComponent implements OnInit {
   employeerId!: number;
 
   ngOnInit(): void {
-    this.getAllUsers();
-  }
-  openDialog(): void {
-    const dialogRef = this.dialog.open(DialogContratComponent, {});
-    dialogRef.afterClosed().subscribe(res => {
-      console.log(res);
-      this.router.navigate(['/employeer/',this.employeerId,'myaccount']);
-    })
-  }
-  getAllUsers(): void {
     this.employeerId = Number(this.route.params.subscribe(params => {
       this.usersApi.getUsersById(params.employeerId).subscribe((response: any) => {
         this.employeerId = params.employeerId;
         this.userData = response;
-        console.log(this.userData);
-        const newUser = {
-          id: this.userData.id,
-          firstname: this.newname,
-          lastname: this.newlastname,
-          email: this.newemail,
-          number: this.newnumber,
-          password: this.userData.password,
-          document: this.newdocument,
-        };
-
-        this.usersApi.updateUser(this.userData.id, newUser)
-          .subscribe(response => {
-            console.log(response);
-            this.openDialog();
-          });
       });
     }))
+  }
+  openDialog(): void {
+    const dialogRef = this.dialog.open(DialogContratComponent, {});
+    dialogRef.afterClosed().subscribe(res => {
+      this.router.navigate(['/employeer/',this.employeerId,'myaccount']);
+    })
+  }
+  getUpdateDate(): void {
+    const newUser = {
+      id: this.userData.id,
+      firstname: this.newname,
+      lastname: this.newlastname,
+      email: this.newemail,
+      number: this.newnumber,
+      password: this.userData.password,
+      document: this.newdocument,
+    };
 
+    if(this.newname == null || this.newlastname == null || this.newemail == null || this.newnumber == null ||
+      this.newdocument == null){
+      alert("Complete todos los campos");
+    }
+    else {
+      this.usersApi.updateUser(this.userData.id, newUser)
+        .subscribe(response => {
+          console.log(response);
+          this.openDialog();
+        });
+    }
   }
 }
