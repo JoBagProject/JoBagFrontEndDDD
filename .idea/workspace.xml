@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bbce56cc-d64a-4664-9e69-3b8a3ef33e14" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jobag-Fronted-develop/src/app/enterprise/component/modify-professional-profile/modify-professional-profile.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Jobag-Fronted-develop/src/app/enterprise/component/modify-professional-profile/modify-professional-profile.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jobag-Fronted-develop/src/app/enterprise/view/employeerprueba/employeerprueba.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Jobag-Fronted-develop/src/app/enterprise/view/employeerprueba/employeerprueba.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jobag-Fronted-develop/src/app/public/view/prueba/prueba.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Jobag-Fronted-develop/src/app/public/view/prueba/prueba.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jobag-Fronted-develop/src/app/public/view/side-menu-postulant/side-menu.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Jobag-Fronted-develop/src/app/public/view/side-menu-postulant/side-menu.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jobag-Fronted-develop/src/app/result/component/mypostulations/mypostulations.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Jobag-Fronted-develop/src/app/result/component/mypostulations/mypostulations.component.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2HkQ0Bm2bUEDdcwnpySiZzTtRSf" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Jobag-Fronted-develop" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bbce56cc-d64a-4664-9e69-3b8a3ef33e14" name="Changes" comment="" />
+      <created>1668826384744</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1668826384744</updated>
+      <workItem from="1668826387870" duration="681000" />
+      <workItem from="1668827181848" duration="155000" />
+      <workItem from="1668830946725" duration="68000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
